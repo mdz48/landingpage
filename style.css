@@ -1,0 +1,184 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(./img/fondo.jpg);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #AA845A;
+}
+
+#main {
+  margin-top: 180px;
+}
+
+.lista {
+  text-align: center;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  width: 85%;
+  padding: 60px;
+  border-radius: 3vh;
+  margin: 0 auto;
+  background-image: url(./img/dmitriy-demidov--gyOtQS4Yp4-unsplash.jpg);
+  font-size: 28px;
+  font-style: italic;
+  font-family: 'Dancing Script';
+  color: white;
+}
+
+
+.title{ 
+  color: white;
+  font-family: 'Dancing Script';
+  font-size: 86px;
+  text-align: center;
+}
+
+.content img {
+  border-radius: 10vh;
+  border: 10px;
+  border-style:solid;
+  border-top: #333;
+  border-left: #333;
+  border-color: #333;
+  margin-right: 20px;
+}
+
+
+.productos {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px; 
+}
+
+.lista ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: inline-table;
+  text-align: center;
+}
+
+.lista ul li {
+  float: left;
+  margin: 10px;
+  color: white;
+  font-size: 15px;
+  max-width: 350px;
+  height: 700px;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos img {
+  height: 230px;
+  width: 230px;
+  border: 50px;
+  border-radius: 20vh;
+  border-style:solid;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.boton {
+  background-color: #48260d;
+  border-radius: 10px;
+  width: 150px;
+  height: 55px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.boton:hover {
+  background-color: #2b1700;
+}
+
+#contacto {
+  justify-content: center;
+}
+
+#contacto img {
+  border: 0px;
+  border-radius: 0;
+  border-top: 0;
+  width: 300px;
+  width: 300px;
+}
+
+header > a {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-size: auto; /* Ajusta el tamaño del fondo para pantallas más pequeñas */
+  }
+
+  nav ul {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  nav li {
+    float: none;
+    width: 100%;
+  }
+
+  .lista ul li {
+    max-width: 100%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+    height: auto; /* Ajusta la altura para pantallas más pequeñas */
+  }
+
+  .content {
+    width: 100%;
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .productos img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

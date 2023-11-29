@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+    <title>LandingPage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#quienessomos">Quienes Somos</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <div class="lista">
+            <div class="title">
+                <p>PRODUCTOS</p>
+            </div>
+            <ul>
+                <li class="productos">
+                    <img src="./img/bancomesa.jpg" alt=""  >
+                    <p>Descubre la elegancia y funcionalidad en nuestro combo exclusivo de mesa con sillas. Diseñado para brindar estilo y comodidad a tu espacio, este conjunto fusiona artesanía excepcional con materiales de alta calidad.</p><br>
+                    <div class="boton" onclick="mostrarAlerta('Producto')">
+                        <p>COMPRAR</p>
+                    </div>
+                </li>
+                <li class="productos">
+                    <img src="./img/bancoblanco.jpg" alt=""  >
+                    <p>Fabricado con precisión y atención a los detalles, este banco es la elección perfecta para quienes buscan simplicidad elegante y versatilidad en su mobiliario</p>
+                    <div class="boton" onclick="mostrarAlerta('Producto')">
+                        <p>COMPRAR</p>
+                    </div>
+                </li>
+                <li class="productos">
+                    <img src="./img/mesilla.jpg" alt=""  >
+                    <p>Descubre la calidez y encanto natural con nuestra mesilla junto a una mesa de madera clásica. Eleva tu dormitorio con esta combinación armoniosa de estilo y practicidad.</p>
+                    <div class="boton" onclick="mostrarAlerta('Producto')">
+                        <p>COMPRAR</p>
+                    </div>
+                </li>
+                <li class="productos">
+                    <img src="./img/mesedora.jpg" alt=""  >
+                    <p>Sumérgete en momentos de relajación con nuestra mesedora de madera. Su diseño acogedor y la suavidad del balanceo te invitan a disfrutar de tranquilidad y confort.</p>
+                    <div class="boton" onclick="mostrarAlerta('Producto')">
+                        <p>COMPRAR</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="title" id="quienessomos">
+            <p>
+                Quiénes Somos    
+            </p>
+        </div>
+        <div class="content">
+            <img src="./img/logo.jpg" alt="" width="400" height="400">
+            <p>
+                Tallarte es más que una carpintería; es un santuario de la creatividad en madera. En Tallarte, cada pieza es una obra maestra cuidadosamente tallada con pasión y habilidad artística. Nuestro equipo de artesanos expertos se dedica a transformar la madera en piezas únicas que cuentan historias. Desde mobiliario elegante hasta detalles arquitectónicos impresionantes, en Tallarte fusionamos la tradición de la carpintería con la innovación, ofreciendo a nuestros clientes creaciones que destacan por su calidad excepcional y diseño distintivo. Descubre el arte de la madera en cada rincón de tu hogar con Tallarte, donde la madera cobra vida.
+            </p>
+        </div>
+        <div class="title" id="ubicacion" >
+            <p>Ubícanos</p>
+        </div>
+        <div class="content" style="background-image: url(./img/fondomaderaclaro.jpg);">
+            <a href="https://www.google.com.mx/maps/place/Carpinteria+Tizatillo/@16.7639831,-93.1140431,17z/data=!3m1!4b1!4m6!3m5!1s0x85ecd89138992ccf:0xb82282b368eee5a!8m2!3d16.7639831!4d-93.1114682!16s%2Fg%2F11j3vk3l1x?entry=ttu"><img src="./img/ubicacion.png" alt="imagen"></a>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black;">Puedes encontrarnos en Calle Tercera Ote. Nte. 1290, La Pimienta, 29034 Tuxtla Gutiérrez, Chis. De 8 a.m a 6 p.m</p>
+        </div>
+        <div class="title">
+            <p>Contáctanos</p>
+        </div>
+        <div class="content" id="contacto">
+            <p>Nuestras Redes</p>
+            <a href="https://www.instagram.com/maxdiazce/"><img src="https://static.vecteezy.com/system/resources/previews/023/986/555/non_2x/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" alt="" class="contactos"></a>
+            <a href="https://www.facebook.com/maximilianodiazclemente"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" class="contactos" style="height: 250px; width: 250px;"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png" alt="" class="contactos">
+            <p>¡Llamanos!</p>
+            <p>+52 961 198 2869</p>
+        </div>
+    </div>
+    <script>
+        function mostrarAlerta(producto) {
+            alert('Producto agregado al carrito exitosamente! ');
+        }
+    </script>    
+</body>
+</html>
